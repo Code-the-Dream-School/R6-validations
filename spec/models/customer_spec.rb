@@ -1,5 +1,7 @@
 require 'rails_helper'
+
 RSpec.describe Customer, type: :model do
+  # pending "add some examples to (or delete) #{__FILE__}"
   subject { Customer.new(first_name: "Jack", last_name: "Smith", phone: "8889995678", email: "jsmith@sample.com" )}
   it "is valid with valid attributes" do
     expect(subject).to be_valid
@@ -32,7 +34,4 @@ RSpec.describe Customer, type: :model do
   it "returns the correct full_name" do
     expect(subject.full_name).to eq("Jack Smith")
   end
-end
-RSpec.describe Customer, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
 end
