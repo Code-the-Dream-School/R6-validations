@@ -36,6 +36,7 @@ group :development, :test do
   gem 'faker'
   gem 'rails-controller-testing'
   gem 'rexml'
+  gem 'rails-controller-testing'
 end
 
 group :development do
