@@ -1,0 +1,25 @@
+current directory: /Users/jacobrobak/Documents/CTD/Assignments/R6-validations/vendor/cache/ruby/3.0.0/gems/puma-5.3.1/ext/puma_http11
+/Users/jacobrobak/.rbenv/versions/3.0.1/bin/ruby -I /Users/jacobrobak/.rbenv/versions/3.0.1/lib/ruby/3.0.0 -r ./siteconf20230114-53030-ph07pa.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+checking for X509_STORE_up_ref()... yes
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
+creating Makefile
+
+current directory: /Users/jacobrobak/Documents/CTD/Assignments/R6-validations/vendor/cache/ruby/3.0.0/gems/puma-5.3.1/ext/puma_http11
+make DESTDIR\= clean
+
+current directory: /Users/jacobrobak/Documents/CTD/Assignments/R6-validations/vendor/cache/ruby/3.0.0/gems/puma-5.3.1/ext/puma_http11
+make DESTDIR\=
+compiling http11_parser.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/jacobrobak/Documents/CTD/Assignments/R6-validations/vendor/cache/ruby/3.0.0/gems/puma-5.3.1/ext/puma_http11
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20230114-53030-5zbq44/puma
