@@ -2,7 +2,7 @@
 
 <h1>Customers</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <%# <th>First name</th>
@@ -22,9 +22,9 @@
         <td><%= customer.full_name %></td>
         <td><%= customer.phone %></td>
         <td><%= customer.email %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', customer, class:"btn btn-success" %></td> 
+        <td><%= link_to 'Edit', edit_customer_path(customer), class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>

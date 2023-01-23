@@ -2,7 +2,7 @@
 
 <h1>Orders</h1>
 
-<table>
+<table class="table">
   <!--<thead>
     <tr>
       <th> Full name</th>
@@ -17,8 +17,8 @@
       <tr>
        <td><%= order.product_name%></td>
         <td><%= order.product_count %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Show', order, class: "btn btn-success" %></td>
+        <td><%= link_to 'Edit', edit_order_path(order), class: "btn btn-warning" %></td>
        
       </tr>
     <% end %>
@@ -27,5 +27,5 @@
 
 <br>
 
-<%= link_to 'New Order', new_order_path %>
-<%= link_to 'All Customers', customers_path %>
+<%= link_to 'New Order', new_order_path, class: "btn btn-primary" %>
+<%= link_to 'All Customers', customers_path, class: "btn btn-success" %>
