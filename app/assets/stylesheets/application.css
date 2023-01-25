@@ -14,3 +14,19 @@
  *= require_tree .
  *= require_self
  */
+.jumbo {
+  background: url("2023.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  /* border: solid thin red; */
+  height: 5em;
+}
+
+@font-face {
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+}
+
+h1 {
+  font-family: "Bitstream Vera Serif Bold", serif;
+}

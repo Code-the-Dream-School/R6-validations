@@ -15,11 +15,11 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-       <td><%= order.product_name%></td>
+        <td><i class="fa-solid fa-mug-hot"></i></td>
+        <td><%= order.product_name%></td>
         <td><%= order.product_count %></td>
         <td><%= link_to 'Show', order, class: "btn btn-success" %></td>
         <td><%= link_to 'Edit', edit_order_path(order), class: "btn btn-warning" %></td>
-       
       </tr>
     <% end %>
   </tbody>
