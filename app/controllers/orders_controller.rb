@@ -1,8 +1,9 @@
 class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :catch_not_found
-
   before_action :set_order, only: %i[ show edit update destroy ]
   layout 'order_layout'
+
+
 
   # GET /orders or /orders.json
   def index
@@ -16,6 +17,7 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
       @order = Order.new
+      
   end
 
   # GET /orders/1/edit
@@ -49,11 +51,12 @@ class OrdersController < ApplicationController
   def destroy
       @order.destroy
       respond_to do |format|
-          format.html { redirect_to orders_url, notice: "Order was successfully destroyed." }
+          format.html { redirect_to customer_path(@order.customer_id), notice: "Order was successfully destroyed." }
           format.json { head :no_content }
       end
   end
 
+  
   private
       # Use callbacks to share common setup or constraints between actions.
       def set_order
