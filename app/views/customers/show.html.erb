@@ -1,0 +1,43 @@
+<div class="card shadow p-3 mb-5 bg-light rounded">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @customer.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @customer.last_name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @customer.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+
+<table class="table">
+<% if @customer.orders.present?%>
+ <tr>
+      <th>Product</th>
+      <th>Count</th>
+  </tr>
+  <%end%>
+<%@customer.orders.each do |order|%>
+ <%= render partial: "orders/orders", locals: {order: order} %>
+ <%end%>
+ </table>
+
+
+
+<br>
+<br>
+<%= link_to 'Edit', edit_customer_path(@customer), class: "btn btn-warning" %>
+<%= link_to 'Back', customers_path, class: "btn btn-primary" %>
+</div>
